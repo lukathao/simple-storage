@@ -19,9 +19,9 @@ contract SimpleStorage {
     mapping(string => uint256) public nameToFavoriteNumber;
     
     //private visibility means can only be called from this smart contract
-    // function store(uint256 _favoriteNumber) public {
-    //     favoriteNumber = _favoriteNumber;
-    // }
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
 
     //view - read off block chain
     //pure - make state change, some type of math
